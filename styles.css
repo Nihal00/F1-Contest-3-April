@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* custom css flex div section */
+.flex-div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 5rem;
+    margin-top: 2.5rem;
+    padding: 0 25px;
+}
+
+.div-one img, .div-two img, .div-three img{
+    height: 200px;
+    width: 300px;
+    object-fit: cover;
+}
+
+.div-one, .div-two, .div-three{
+    width: 300px;
+    height: auto;
+}
+.div-one p, .div-two p, .div-three p{
+    text-align: center;
+    padding: 0 5px;
+}
+
+/* custom css grid div section  */
+.photo-gallery{
+    width: 80%;
+    margin: 10px auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+}
+.photo-container{
+    display: grid;
+    grid-template-columns: 4fr 2fr 2fr 4fr;
+    grid-template-rows: repeat(3, 33%);
+    gap: 10px;
+    padding: 30px;
+}
+
+.item1{
+    grid-row: 1 / span 2;
+}
+
+.item9 {
+    grid-column: 2 / span 3;
+}
+
+.photo-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* button */
+.btn-1 {
+    transition: .4s all;
+}
+
+.btn-1:hover {
+    transform: scale(1.1);
+}
+
+/* footer  */
+.buttons {
+    display: flex;
+    justify-content: end;
+}
+
+@media screen and (max-width: 666px) {
+   .buttons {
+    display: flex;
+    justify-content: start;
+    padding-top: 20px;
+    } 
+}
